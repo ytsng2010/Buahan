@@ -23,14 +23,11 @@ Sebagai contoh:
 <option value="rambutan">rambutan </option>
 <option value="papaya">papaya </option>
 <option value="mangga">mangga</option>
-<form method='post'>
-Komen:<br>
-<textarea name='komen'id='komen'>
-</textarea>
-<br>
-<input type='hidden'name='articleid'
-id='articleid'value='<? echo $_GET["id"];?>'/>
-<input type='submit'value='Hantar'/>
+<h1>Komen:</h1>
+<form action="/action_page.php">
+  <label for="fname"></label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <input type="submit" value="Submit">
 </form>
 </body>
 </html>
