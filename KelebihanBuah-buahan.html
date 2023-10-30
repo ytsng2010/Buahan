@@ -17,25 +17,33 @@ Sebagai contoh:
 <li><a href="Rambutan.html">rambutan</li>
 <img src="rambutan.jpg" alt="rambutan" style="width:218px;height:218px;"></a>
 <h2><span style="color:red;">Apakah Buah-buahan Tempatan yang anda suka?Berikan kami buah-buahan tempatan yang anda suka.&#128071;</h2>
+<!DOCTYPE html>
+<html>
+<body>
+
 <form id="redirect Form">
 <select id="destinationSelect" onchange="redirect()">
 <option value="Durian.html">durian </option>
 <option value="Manggis.html">manggis </option>
-<option value="rambutan.html">rambutan </option>
+<option value="Rambutan.html">rambutan </option>
 <option value="Papaya.html">papaya </option>
 <option value="Mangga.html">mangga</option>
 </select>
+<br>
+<button onclick="redirect()">Hantar</button>
+
 </form>
- <script>
+<script>
     function redirect(){
-      var selectedOption=document.getElementById("
-        destinationSelect").value;
-       if(selectedOption){
-         window.location=selectedOption
-      }
+        var selectedOption = document.getElementById("destinationSelect").value;
+        if(selectedOption){
+            window.location = selectedOption;
+        }
     }
-                                               
- </script>
+</script>
+
+</body>
+</html>
  <br>
 <form action="komen.html">
  <fieldset>
